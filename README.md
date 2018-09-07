@@ -1,3 +1,5 @@
+# Blockchain - Lecture
+
 ## Geth 과정에 사용되는 명령어들
 
 > 교재의 Code 를 Copy&Paste 할 때 마다
@@ -45,3 +47,8 @@ code startmist.bat
 // Mist 실행
 startmist.bat
 ```
+
+## Solidity Code
+
+- solidity 폴더의 파일들을 사용하세요
+  - 바로가기 : https://github.com/jongkwang/blockchain-lecture/tree/master/solidity
