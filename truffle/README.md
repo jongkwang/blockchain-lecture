@@ -49,19 +49,19 @@ web3.eth.accounts
 web3.eth.getBalance(web3.eth.accounts[0])
 
 // 지갑 잔액을 ether 단위로 표시
-web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0], "ether"))
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]), "ether")
 
 // MyName 컨트랙을 "app" 전역 변수로 설정
 MyName.deployed().then(function(instance) { app = instance; })
 
 // 두번째 지갑 잔액 보기
-web3.fromWei(web3.eth.getBalance(web3.eth.accounts[1], "ether"))
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[1]), "ether")
 
 // setMyName 셋팅 + 가스비 지불은 2번째 지갑에서
 app.setMyName("Kim", {from: web3.eth.accounts[1]})
 
 // 두번째 지갑 잔액 보기
-web3.fromWei(web3.eth.getBalance(web3.eth.accounts[1], "ether"))
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[1]), "ether")
 
 // getMyName 호출
 app.getMyName()
