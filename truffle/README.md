@@ -67,5 +67,25 @@ web3.fromWei(web3.eth.getBalance(web3.eth.accounts[1], "ether"))
 app.getMyName()
 ```
 
+## Ganache 연결
 
+```
+// truffle-config.js 변경
+// 참조 URL : http://truffleframework.com/docs/advanced/configuration
+module.exports = {
+  networks: {
+    development: {
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: "*" // Match any network id
+    }
+  }
+};
 
+// build 폴더에서 Network ID 변경 확인
+migrate --compile-all --reset --network development
+
+// 새로운 CMD 에서 실행
+// Ganache 네트워크에 Truffle Console 연결
+truffle console --network development
+```
