@@ -24,11 +24,11 @@ geth --datadir . account list
 
 // 비밀번호 파일 생성하기
 code password.txt
-1234
+12341234
 
 // 블록체인 시작 파일 생성
 code startblockchain.bat
-geth --datadir . --networkid 9999 --nodiscover --mine --minerthreads 1 --rpc --rpcport 8545 --rpccorsdomain "*" --rpcapi "eth,web3,personal,net" --nat any --unlock 0 --password ./password.txt
+geth --datadir . --networkid 9999 --nodiscover --rpc --rpcport 8545 --rpccorsdomain "*" --rpcapi "eth,web3,personal,net" --nat any --unlock 0 --password ./password.txt
 
 // 블록체인 시작
 startblockchain.bat
