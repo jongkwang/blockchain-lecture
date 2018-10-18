@@ -67,6 +67,23 @@ code startmist.bat
 startmist.bat #### macOS의 경우 : startmist.sh
 ```
 
+## Geth 주요 명령어
+
+#### 계정 관련
+- 계정 목록 : eth.accounts
+- 1번째 계정 주소 : eth.accounts[0]
+- 신규 계정 생성 : personal.newAccount()
+- 계정 잠금 해제 : personal.unlockAccount
+
+#### 채굴
+- 채굴 시작 : miner.start()
+- 채굴 중지 : miner.stop()
+
+#### 조회
+- 대기중인 트랜젝션 : eth.pendingTransactions
+- 트랜젝션 ID 로 상세조회 : eth.getTransaction("트랜잭션ID")
+- 현재 블록 넘버 : eth.blockNumber
+
 ## Solidity Code
 
 - solidity 폴더의 파일들을 사용하세요
