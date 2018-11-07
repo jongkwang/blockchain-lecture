@@ -83,6 +83,11 @@ startmist.bat #### macOS의 경우 : startmist.sh
 - 대기중인 트랜젝션 : <code>eth.pendingTransactions</code>
 - 트랜젝션 ID 로 상세조회 : <code>eth.getTransaction("트랜잭션ID")</code>
 - 현재 블록 넘버 : <code>eth.blockNumber</code>
+  - web3.eth.getBlock('latest') // 마지막 블록 정보
+
+#### 기타
+- debug.verbosity(2) // (0=silent, 1=error, 2=warn, 3=info, 4=core, 5=debug, 6=debug detail)
+
 
 ## Solidity Code
 
